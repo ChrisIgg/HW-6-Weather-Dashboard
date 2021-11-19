@@ -1,0 +1,25 @@
+#title-box,
+#title-p,
+#results-output {
+  background-color: var(--prp5);
+  background-image: linear-gradient(135deg, var(--prp5), var(--prp1));
+}
+
+#title {
+  text-align: center;
+  /* background-color: var(--prp5); */
+  color: var(--w);
+  border: none;
+}
+
+#city-name {
+  background-color: var(--o1);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#city-box {
+  background-color: var(--o1);
+  font-weight: bold;
+  font-size: 22px;
+}

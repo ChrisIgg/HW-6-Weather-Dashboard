@@ -5,17 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script
+      src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   </head>
-  <body>
-    <header>
-      <h1>Weather Dashboard</h1>
+  <body class="is-mobile my-element">
+    <header id="title-box" class="is-mobile is-centered">
+      <div class="column">
+      <h1 id="title" class="title is-1">Weather Dashboard</h1>
+      </div>
     </header>
-    <container>
-      <article class="col">
-        <h2>Search for a City</h2>
-        <textarea>Input Text Here</textarea>
-        <button>Search</button>
-      </article>
-    </container>
+    <main>
+        <div id="four-columns" class="columns is-desktop is-centered">
+            <div id="city-box" class="column is-one-fifth">
+            <h2>Search for a City<input 
+              id="city-select"
+              class="input"
+              type="text"
+              placeholder="Enter City Here" 
+            />
+            </h2>
+            <button id="searchBtn">Search</button>
+            </col1>
+          </div>
+        <content class="col">
+            <h3>City and Date</h3>
+            <h4>ApiData</h4>
+        </content>
+        <content class="row">
+            <h5>5-Day Forecast</h5>
+            <col1 class="col" id="col1"></col1>
+            <col2 class="col" id="col2"></col1>
+            <col3 class="col" id="col3"></col1>
+            <col4 class="col" id="col4"></col1>
+            <col5 class="col" id="col5"></col1>
+            </content>
+    </main>
+    <script src="./assets/script.js"> </script>
   </body>
 </html>
